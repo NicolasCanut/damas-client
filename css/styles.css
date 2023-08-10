@@ -1,0 +1,213 @@
+/* ------------------- WEB GENERAL ------------------- */
+
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+:root {
+  --color-principal: #ac2828; /* Rojo brillante */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  background-color: #262626;
+  user-select: none;
+  height: 100vh;
+  width: 100vw;
+}
+
+a {
+  cursor: pointer;
+  color: var(--color-principal);
+  text-decoration: none;
+}
+
+/* ----- NAVBAR ----- */
+
+.navbar {
+  background-color: #333;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  height: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.997);
+}
+
+.nav-content {
+  width: 100%;
+  max-width: 1366px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  gap: 20px; /* Espaciado entre elementos */
+  height: 100%;
+}
+
+.navbar li {
+  display: flex;
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #F1F1F1;
+  transition: color 0.3s;
+  height: 100%;
+  line-height: 50px;
+}
+
+.navbar a:hover {
+  color: var(--color-principal);
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  color: var(--color-principal)
+}
+
+/* ----- CONTENIDO ----- */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80%;
+  max-width: 1366px;
+}
+
+
+.button {
+  border: 2px solid var(--color-principal);
+  border-radius: 3px;
+  height: 34px;
+  width: 100px;
+  font-size: 12px;
+  background-color: var(--color-principal);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.997);
+
+}
+
+.button:active {
+  transform: translateY(1px); /* Efecto de clic */
+  background-color: #b94343; /* Cambio de color al hacer clic */
+}
+
+#players {
+  display: flex;
+  justify-content: space-between;
+  width: 410px;
+}
+
+@media (max-width: 600px) {
+  .players {
+    flex-direction: column;
+  }
+}
+
+.text-input{
+  border: 2px solid var(--color-principal);
+  border-radius: 3px;
+  height: 30px;
+  max-width: 200px;
+  background-color: #171717;
+  color: #F1F1F1;
+}
+
+
+
+/* ------------------- TABLA DE JUEGO ------------------- */
+
+.board {
+  display: grid;
+  background-color: #F1F1F1;
+  border: 5px solid var(--color-principal);
+  border-radius: 3px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 0;
+  max-width: 400px;
+  max-height: 400px;
+  width: 70vw;
+  height: 70vw;
+}
+
+
+.cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d3d3d3;
+}
+
+
+.cell.highlight {
+  background-color: lightblue;
+}
+
+.piece {
+  margin: auto;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.black {
+  background-color: #000;
+}
+
+.king {
+  border: 2px solid gold;
+}
+
+.white-cell {
+  background-color: #d3d3d3;
+}
+
+.black-cell {
+  background-color: #bdbdbd;
+}
+
+/* ----- CONTACTO ----- */
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 35%;
+  width: 80%;
+}
+
+
+/* ----- FOOTER ----- */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* border: 1px solid red; */
+  height: 100px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.997);
+  background-color: #333;
+}

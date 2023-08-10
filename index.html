@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <title>Damas</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="nav-content">
+      <ul id="navLinks">
+        <li><a href="index.html">Damas</a></li>
+        <li><a href="/contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="board" id="board">
+      <!-- Genera el tablero de damas con JavaScript -->
+    </div>
+    <div id="players">
+      <input type="text" id="player1" class="text-input" placeholder="Jugador 1" required>
+      <input type="text" id="player2" class="text-input" placeholder="Jugador 2" required>
+      <button id="start-button" class="button">Iniciar Partida</button>
+    </div>
+    <div class="score">
+      <p id="player1-score" class="score">Puntaje Jugador 1: 0</p>
+      <p id="player2-score" class="score">Puntaje Jugador 2: 0</p>
+    </div>
+    <div class="controls">
+        <button id="save-button" class="button">Guardar Partida</button>
+        <button id="load-button" class="button">Cargar Partida</button>
+    </div>
+    <div class="messages">
+      <p id="win-message"></p>
+      <p id="draw-message"></p>
+    </div>
+  </div>
+  <footer>
+    <p>Nicolás Canut</p>
+    <a href="https://github.com/NicolasCanut/damas-client" target="_blank">Ver repositorio en Github</a>
+  </footer>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
